@@ -1,9 +1,15 @@
 #include <iostream>
+#include <cmath>
 
-using namespace std;
+    using namespace std;
 
-int main()
-{
-    cout << "Hello world!" << endl;
-    return 0;
+int main(){
+  //deklaralasok
+  int a, b, c, d, e, f;
+char ln, mln, hln;
+  //beolvasas
+  cin>>a>>b>>c>>d>>e;
+
+
+  return 0;
 }
