@@ -1,15 +1,17 @@
 #include <iostream>
 #include <cmath>
 
-    using namespace std;
+using namespace std;
 
 int main(){
   //deklaralasok
-  int a, b, c, d, e, f;
-char ln, mln, hln;
-  //beolvasas
-  cin>>a>>b>>c>>d>>e;
+  long int h, sz;
 
+ //beolvasas
+ cin>>h>>sz;
+ //megoldas
 
-  return 0;
+  //kiiratas
+ cout<<e;
+  return ;
 }
