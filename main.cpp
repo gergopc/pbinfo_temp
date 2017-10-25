@@ -1,22 +1,35 @@
 #include <iostream>
+#include <fstream>
+#include <string>
 
 using namespace std;
-int main (){
-int n;
-cin>>n;
-if(n != 0){
-  if (n%792==0) cout<<n/792<<' '<<0;
-  else{
-     if (n%792<=9) cout<<(n/792+1)<<' '<<(n%792);
-     else{
-  if (n%792<=189) {
-     if ((n%792-9)%2==0) cout<<(n/792+1)<<' '<<((n%792-9)/2+9);
-    else cout<<"IMPOSIBIL";
- }else{
-     if ((n%792-189)%3==0) cout<<(n/792+1)<<' '<<((n%792-189)/3+99);
-     else cout<<"IMPOSIBIL";
+
+int conflength = 1;
+fstream config("main.conf");
+
+bool getConfig(string in){
+    string line;
+    //string prefix;
+for (int i=0; i<=conflength; i++){
+    config>>line;
+    //cout<<line<<endl;
+    //cout<<line.substr(0, line.find("="))<<endl;
+    if(line.substr(0, line.find("="))==in){
+    line = line.erase(line.find("=") + 1);
+    cout<<line<<endl;
+    if(line == "true") return true;
+    else return false;
+    break;
+    }
 }
+
 }
-}
-}else cout<<"IMPOSIBIL";
+
+int main()
+{
+    string setting;
+cin>>setting;
+if(getConfig(setting)==true) cout<<"IGAZ";
+    else cout<<"HAMIS";
+    return 0;
 }
