@@ -33,3 +33,85 @@ if(getConfig(setting)==true) cout<<"IGAZ";
     else cout<<"HAMIS";
     return 0;
 }
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main ()
+{
+int a, b, c, d, e, maxi, a1, b1, c1, r;
+cin>>a>>b>>c>>d>>e;
+//a1
+if(a>b && a>c && a>d && a>e) {
+        a1=a;
+        a=0;
+
+}
+if(b>a && b>c && b>d && b>e){
+        a1=b;
+        b=0;
+}
+if(c>b && c>a && c>d && c>e) {
+        a1=c;
+        c=0;
+}
+if(d>b && d>c && d>a && d>e) {
+        a1=d;
+        d=0;
+}
+if(e>b && e>c && e>d && e>a) {
+        a1=e;
+        e=0;
+}
+//b1
+if(a>b && a>c && a>d && a>e) {
+        b1=a;
+        a=0;
+
+}
+if(b>a && b>c && b>d && b>e){
+        b1=b;
+        b=0;
+}
+if(c>b && c>a && c>d && c>e) {
+        b1=c;
+        c=0;
+}
+if(d>b && d>c && d>a && d>e) {
+        b1=d;
+        d=0;
+}
+if(e>b && e>c && e>d && e>a) {
+        b1=e;
+        e=0;
+}
+//c1
+if(a>b && a>c && a>d && a>e) {
+        c1=a;
+        a=0;
+
+}
+if(b>a && b>c && b>d && b>e){
+        c1=b;
+        b=0;
+}
+if(c>b && c>a && c>d && c>e) {
+        c1=c;
+        c=0;
+}
+if(d>b && d>c && d>a && d>e) {
+        c1=d;
+        d=0;
+}
+if(e>b && e>c && e>d && e>a) {
+        c1=e;
+        e=0;
+}
+
+
+cout<<a1<<' '<<b1<<' '<<c1;
+//r=a1+b1+c1;
+//cout>>r;
+}
+
