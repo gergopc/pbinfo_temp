@@ -3,10 +3,17 @@
 using namespace std;
 
 int main(){
-    int a, b, d, e;
-    cin>>a>>b>>d;
-    e=(a*b) / (d*d);
-    e = e + (a*b) % (d*d);
-    cout<<e;
-    return 0;
+long long int sz, n, e, maxi;
+cin>>n;
+cin>>maxi;
+e=1;
+for(int i=1; i<n; i++){
+    cin>>sz;
+    if(sz>maxi)
+        maxi=sz;
+    else if(sz==maxi)
+        e++;
+}
+cout<<maxi<<' '<<e;
+
 }
