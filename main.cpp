@@ -17,7 +17,7 @@ for(int i=1; i<n; i++){
 cout<<maxi<<' '<<e;
 
 }
-//108
+//1566
 #include <iostream>
 
 using namespace std;
