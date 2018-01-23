@@ -40,3 +40,6 @@ while(m>0){
 cout<<a<<endl<<b;
 }
 
+gyufaszal, 1052
+    for(int i=0; i<10; i++)
+    cout<<szjf[i];
